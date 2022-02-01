@@ -1,0 +1,38 @@
+17:23:35.068 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:23:35.713 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:23:36.173 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tekschool-api-test.azurewebsites.net/api/v1/product/86
+1 > Authorization: Basic dGVrc2Nob29sOmFkbWlu
+1 > Host: tekschool-api-test.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:23:37.005 [main] DEBUG com.intuit.karate - response time in milliseconds: 827
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json
+1 < Expires: 0
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 < X-Frame-Options: DENY
+1 < Date: Tue, 01 Feb 2022 22:23:36 GMT
+1 < Set-Cookie: JSESSIONID=D9D7324F3883823146969759F22419C2; Domain=tekschool-api-test.azurewebsites.net; Secure
+{"id":86,"productName":"string","category":{"id":1,"categoryName":"SDET-A","new":false},"basePrice":0.0,"new":false}
+17:23:37.010 [main] INFO  com.intuit.karate - [print] {
+  "id": 86,
+  "productName": "string",
+  "category": {
+    "id": 1,
+    "categoryName": "SDET-A",
+    "new": false
+  },
+  "basePrice": 0.0,
+  "new": false
+}
+ 
+17:23:37.012 [main] INFO  com.intuit.karate - [print] created id is:  86 
