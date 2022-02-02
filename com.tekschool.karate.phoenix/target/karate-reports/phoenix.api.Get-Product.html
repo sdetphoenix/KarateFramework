@@ -22,7 +22,7 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-pass" class="bg-success">2</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -30,13 +30,16 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2022-02-01 05:23:37 PM</div>
+    <div>2022-02-02 04:47:59 PM</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
             <a href="#[1:8]"><span>[1:8]</span> <span>get product by Id</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:19]"><span>[2:19]</span> <span>get all product</span></a>
           </div>
         </div>
       </div>
@@ -62,7 +65,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1295</span>
+              <span>ms:</span>&nbsp;<span>346</span>
             </div>
           </div>
           <div class="step-row">
@@ -85,7 +88,7 @@
         <span>Given</span>&nbsp;<span>url &#39;https://tekschool-api-test.azurewebsites.net&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -94,7 +97,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">17:23:35.714 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">16:47:58.925 karate.env system property was: null 
 </div>   
 
   
@@ -114,7 +117,7 @@
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;tekschool&#39;, password: &#39;admin&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">54</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -170,7 +173,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">1224</div>
+    <div class="time-cell passed">343</div>
   </div>
 
    
@@ -179,7 +182,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.10">17:23:36.173 request:
+  <div class="preformatted" data-parent="0.10">16:47:58.926 request:
 1 &gt; GET https://tekschool-api-test.azurewebsites.net/api/v1/product/86
 1 &gt; Authorization: Basic dGVrc2Nob29sOmFkbWlu
 1 &gt; Host: tekschool-api-test.azurewebsites.net
@@ -188,7 +191,7 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-17:23:37.005 response time in milliseconds: 827
+16:47:59.268 response time in milliseconds: 342
 1 &lt; 200
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 1 &lt; Pragma: no-cache
@@ -199,9 +202,9 @@
 1 &lt; X-XSS-Protection: 1; mode=block
 1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
 1 &lt; X-Frame-Options: DENY
-1 &lt; Date: Tue, 01 Feb 2022 22:23:36 GMT
-1 &lt; Set-Cookie: JSESSIONID=D9D7324F3883823146969759F22419C2; Domain=tekschool-api-test.azurewebsites.net; Secure
-{&quot;id&quot;:86,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;SDET-A&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false}
+1 &lt; Date: Wed, 02 Feb 2022 21:47:58 GMT
+1 &lt; Set-Cookie: JSESSIONID=C6F2CCBEF84860F20F376E6B5AAD33DF; Domain=tekschool-api-test.azurewebsites.net; Secure
+{&quot;id&quot;:86,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false}
 </div>   
 
   
@@ -249,7 +252,7 @@
         <span>And</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -258,12 +261,12 @@
 
   
 
-  <div class="preformatted" data-parent="0.12">17:23:37.011 [print] {
+  <div class="preformatted" data-parent="0.12">16:47:59.268 [print] {
   &quot;id&quot;: 86,
   &quot;productName&quot;: &quot;string&quot;,
   &quot;category&quot;: {
     &quot;id&quot;: 1,
-    &quot;categoryName&quot;: &quot;SDET-A&quot;,
+    &quot;categoryName&quot;: &quot;Consumable&quot;,
     &quot;new&quot;: false
   },
   &quot;basePrice&quot;: 0.0,
@@ -326,7 +329,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.14">17:23:37.012 [print] created id is:  86 
+  <div class="preformatted" data-parent="0.14">16:47:59.269 [print] created id is:  86 
 </div>   
 
   
@@ -346,7 +349,7 @@
         <span>*</span>&nbsp;<span>match id == 86</span>
       </div>
     </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -374,7 +377,7 @@
         <span>*</span>&nbsp;<span>def productName = response.productName</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -402,7 +405,7 @@
         <span>*</span>&nbsp;<span>match productName contains &#39;string&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -412,6 +415,1952 @@
   
 
      
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:19]</span>
+                <span class="scenario-name">get all product</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>337</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://tekschool-api-test.azurewebsites.net&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">16:47:59.273 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;) { username: &#39;tekschool&#39;, password: &#39;admin&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/product/all&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">332</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">16:47:59.275 request:
+1 &gt; GET https://tekschool-api-test.azurewebsites.net/api/v1/product/all
+1 &gt; Authorization: Basic dGVrc2Nob29sOmFkbWlu
+1 &gt; Host: tekschool-api-test.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_291)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:47:59.604 response time in milliseconds: 329
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+1 &lt; Date: Wed, 02 Feb 2022 21:47:59 GMT
+1 &lt; Set-Cookie: JSESSIONID=C801AFC5BEEAEBDBC619D995EB5A77DB; Domain=tekschool-api-test.azurewebsites.net; Secure
+[{&quot;id&quot;:48,&quot;productName&quot;:&quot;delta&quot;,&quot;category&quot;:{&quot;id&quot;:42,&quot;categoryName&quot;:&quot;Glacken&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:50,&quot;productName&quot;:&quot;apitesting&quot;,&quot;category&quot;:{&quot;id&quot;:23,&quot;categoryName&quot;:&quot;Abdul Majeed&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:51,&quot;productName&quot;:&quot;AfganiFood&quot;,&quot;category&quot;:{&quot;id&quot;:8,&quot;categoryName&quot;:&quot;Frozen Food&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:158.0,&quot;new&quot;:false},{&quot;id&quot;:52,&quot;productName&quot;:&quot;Java&quot;,&quot;category&quot;:{&quot;id&quot;:40,&quot;categoryName&quot;:&quot;BDD&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:53,&quot;productName&quot;:&quot;Java&quot;,&quot;category&quot;:{&quot;id&quot;:40,&quot;categoryName&quot;:&quot;BDD&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:54,&quot;productName&quot;:&quot;SQL&quot;,&quot;category&quot;:{&quot;id&quot;:40,&quot;categoryName&quot;:&quot;BDD&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:55,&quot;productName&quot;:&quot;SQL&quot;,&quot;category&quot;:{&quot;id&quot;:39,&quot;categoryName&quot;:&quot;Postman&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:56,&quot;productName&quot;:&quot;SQL&quot;,&quot;category&quot;:{&quot;id&quot;:41,&quot;categoryName&quot;:&quot;TestNG&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:57,&quot;productName&quot;:&quot;SQL&quot;,&quot;category&quot;:{&quot;id&quot;:41,&quot;categoryName&quot;:&quot;TestNG&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:58,&quot;productName&quot;:&quot;Zirak&quot;,&quot;category&quot;:{&quot;id&quot;:41,&quot;categoryName&quot;:&quot;TestNG&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:59,&quot;productName&quot;:&quot;temp&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:10.0,&quot;new&quot;:false},{&quot;id&quot;:60,&quot;productName&quot;:&quot;temp&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:10.0,&quot;new&quot;:false},{&quot;id&quot;:62,&quot;productName&quot;:&quot;saharsahar&quot;,&quot;category&quot;:{&quot;id&quot;:5,&quot;categoryName&quot;:&quot;Toilet and Bath&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:63,&quot;productName&quot;:&quot;clothes&quot;,&quot;category&quot;:{&quot;id&quot;:5,&quot;categoryName&quot;:&quot;Toilet and Bath&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:64,&quot;productName&quot;:&quot;Fruits&quot;,&quot;category&quot;:{&quot;id&quot;:44,&quot;categoryName&quot;:&quot;Abdul Majeed Jahid&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:65,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:45,&quot;categoryName&quot;:&quot;MD&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:66,&quot;productName&quot;:&quot;school&quot;,&quot;category&quot;:{&quot;id&quot;:45,&quot;categoryName&quot;:&quot;MD&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:68,&quot;productName&quot;:&quot;zakia&quot;,&quot;category&quot;:{&quot;id&quot;:4,&quot;categoryName&quot;:&quot;Postman API Practice&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:69,&quot;productName&quot;:&quot;Yhaoo&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:15.0,&quot;new&quot;:false},{&quot;id&quot;:71,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:72,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:73,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:74,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:75,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:76,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:77,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:78,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:79,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:80,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:81,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:82,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:83,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:84,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:85,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:86,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:87,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:89,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:90,&quot;productName&quot;:&quot;string&quot;,&quot;category&quot;:{&quot;id&quot;:2,&quot;categoryName&quot;:&quot;Fragrances&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:91,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:92,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:93,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:94,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:95,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:96,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:97,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:98,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:99,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:103,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:104,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:105,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:106,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:109,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:110,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:111,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:112,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:113,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:114,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:115,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:116,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:117,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:118,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:119,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:120,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:121,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:122,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:123,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:124,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:125,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:126,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:128,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:129,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:131,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:132,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:133,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:134,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:135,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:136,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:137,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:138,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:139,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:140,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:141,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:142,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:147,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:148,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:149,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:150,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:151,&quot;productName&quot;:&quot;apple786&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:152,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:153,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:154,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:155,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:156,&quot;productName&quot;:&quot;apple777&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:157,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:158,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:159,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:161,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:162,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:163,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:164,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:165,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:166,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:167,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:168,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:173,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:174,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:176,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:177,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:178,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:179,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:180,&quot;productName&quot;:&quot;pear&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:200.0,&quot;new&quot;:false},{&quot;id&quot;:181,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:182,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:183,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:184,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:185,&quot;productName&quot;:&quot;pear&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:200.0,&quot;new&quot;:false},{&quot;id&quot;:187,&quot;productName&quot;:&quot;omicron&quot;,&quot;category&quot;:{&quot;id&quot;:42,&quot;categoryName&quot;:&quot;Glacken&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:189,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:190,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:191,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:192,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:193,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:194,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:195,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:196,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:197,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:198,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:199,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:200,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:201,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:202,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:203,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:204,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:205,&quot;productName&quot;:&quot;omicron&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:206,&quot;productName&quot;:&quot;omicron&quot;,&quot;category&quot;:{&quot;id&quot;:100,&quot;categoryName&quot;:&quot;Demo Category in Class&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:0.0,&quot;new&quot;:false},{&quot;id&quot;:207,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:208,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:209,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:210,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:211,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:212,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:213,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:214,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:215,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:216,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:217,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:218,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:219,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:220,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:221,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:222,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:223,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:224,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:226,&quot;productName&quot;:&quot;apple&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:100.0,&quot;new&quot;:false},{&quot;id&quot;:227,&quot;productName&quot;:&quot;iphone&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:228,&quot;productName&quot;:&quot;galaxy&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false},{&quot;id&quot;:229,&quot;productName&quot;:&quot;Nokia&quot;,&quot;category&quot;:{&quot;id&quot;:1,&quot;categoryName&quot;:&quot;Consumable&quot;,&quot;new&quot;:false},&quot;basePrice&quot;:800.0,&quot;new&quot;:false}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">16:47:59.610 [print] [
+  {
+    &quot;id&quot;: 48,
+    &quot;productName&quot;: &quot;delta&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 42,
+      &quot;categoryName&quot;: &quot;Glacken&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 50,
+    &quot;productName&quot;: &quot;apitesting&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 23,
+      &quot;categoryName&quot;: &quot;Abdul Majeed&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 51,
+    &quot;productName&quot;: &quot;AfganiFood&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 8,
+      &quot;categoryName&quot;: &quot;Frozen Food&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 158.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 52,
+    &quot;productName&quot;: &quot;Java&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 40,
+      &quot;categoryName&quot;: &quot;BDD&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 53,
+    &quot;productName&quot;: &quot;Java&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 40,
+      &quot;categoryName&quot;: &quot;BDD&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 54,
+    &quot;productName&quot;: &quot;SQL&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 40,
+      &quot;categoryName&quot;: &quot;BDD&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 55,
+    &quot;productName&quot;: &quot;SQL&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 39,
+      &quot;categoryName&quot;: &quot;Postman&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 56,
+    &quot;productName&quot;: &quot;SQL&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 41,
+      &quot;categoryName&quot;: &quot;TestNG&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 57,
+    &quot;productName&quot;: &quot;SQL&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 41,
+      &quot;categoryName&quot;: &quot;TestNG&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 58,
+    &quot;productName&quot;: &quot;Zirak&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 41,
+      &quot;categoryName&quot;: &quot;TestNG&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 59,
+    &quot;productName&quot;: &quot;temp&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 10.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 60,
+    &quot;productName&quot;: &quot;temp&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 10.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 62,
+    &quot;productName&quot;: &quot;saharsahar&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 5,
+      &quot;categoryName&quot;: &quot;Toilet and Bath&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 63,
+    &quot;productName&quot;: &quot;clothes&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 5,
+      &quot;categoryName&quot;: &quot;Toilet and Bath&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 64,
+    &quot;productName&quot;: &quot;Fruits&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 44,
+      &quot;categoryName&quot;: &quot;Abdul Majeed Jahid&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 65,
+    &quot;productName&quot;: &quot;string&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 45,
+      &quot;categoryName&quot;: &quot;MD&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 66,
+    &quot;productName&quot;: &quot;school&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 45,
+      &quot;categoryName&quot;: &quot;MD&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 68,
+    &quot;productName&quot;: &quot;zakia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 4,
+      &quot;categoryName&quot;: &quot;Postman API Practice&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 69,
+    &quot;productName&quot;: &quot;Yhaoo&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 15.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 71,
+    &quot;productName&quot;: &quot;string&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 72,
+    &quot;productName&quot;: &quot;string&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 73,
+    &quot;productName&quot;: &quot;string&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 74,
+    &quot;productName&quot;: &quot;string&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 75,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 76,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 77,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 78,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 79,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 80,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 81,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 82,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 83,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 84,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 85,
+    &quot;productName&quot;: &quot;string&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 86,
+    &quot;productName&quot;: &quot;string&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 87,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 89,
+    &quot;productName&quot;: &quot;string&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 90,
+    &quot;productName&quot;: &quot;string&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 2,
+      &quot;categoryName&quot;: &quot;Fragrances&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 91,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 92,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 93,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 94,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 95,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 96,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 97,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 98,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 99,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 103,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 104,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 105,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 106,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 109,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 110,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 111,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 112,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 113,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 114,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 115,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 116,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 117,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 118,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 119,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 120,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 121,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 122,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 123,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 124,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 125,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 126,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 128,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 129,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 131,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 132,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 133,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 134,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 135,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 136,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 137,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 138,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 139,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 140,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 141,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 142,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 147,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 148,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 149,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 150,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 151,
+    &quot;productName&quot;: &quot;apple786&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 152,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 153,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 154,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 155,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 156,
+    &quot;productName&quot;: &quot;apple777&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 157,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 158,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 159,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 161,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 162,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 163,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 164,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 165,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 166,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 167,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 168,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 173,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 174,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 176,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 177,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 178,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 179,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 180,
+    &quot;productName&quot;: &quot;pear&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 200.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 181,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 182,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 183,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 184,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 185,
+    &quot;productName&quot;: &quot;pear&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 200.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 187,
+    &quot;productName&quot;: &quot;omicron&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 42,
+      &quot;categoryName&quot;: &quot;Glacken&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 189,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 190,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 191,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 192,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 193,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 194,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 195,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 196,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 197,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 198,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 199,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 200,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 201,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 202,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 203,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 204,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 205,
+    &quot;productName&quot;: &quot;omicron&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 206,
+    &quot;productName&quot;: &quot;omicron&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 100,
+      &quot;categoryName&quot;: &quot;Demo Category in Class&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 0.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 207,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 208,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 209,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 210,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 211,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 212,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 213,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 214,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 215,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 216,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 217,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 218,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 219,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 220,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 221,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 222,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 223,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 224,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 226,
+    &quot;productName&quot;: &quot;apple&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 100.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 227,
+    &quot;productName&quot;: &quot;iphone&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 228,
+    &quot;productName&quot;: &quot;galaxy&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;id&quot;: 229,
+    &quot;productName&quot;: &quot;Nokia&quot;,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;categoryName&quot;: &quot;Consumable&quot;,
+      &quot;new&quot;: false
+    },
+    &quot;basePrice&quot;: 800.0,
+    &quot;new&quot;: false
+  }
+]
+ 
+</div>   
 
   
 

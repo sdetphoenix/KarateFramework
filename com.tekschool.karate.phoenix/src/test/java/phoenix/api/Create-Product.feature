@@ -21,7 +21,6 @@ Feature: Create product
       }
       """
     And method post
-    Then status 200
     And print response
 
   @create

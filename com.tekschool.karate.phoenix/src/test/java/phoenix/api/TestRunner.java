@@ -6,7 +6,7 @@ class TestRunner {
     
     @Karate.Test
     Karate testUsers() {
-        return Karate.run().tags("@getProduct").relativeTo(getClass());
-    }    
+        return Karate.run().tags().relativeTo(getClass());
+    }
 
 }
