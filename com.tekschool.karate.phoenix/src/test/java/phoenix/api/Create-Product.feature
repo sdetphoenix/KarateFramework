@@ -23,9 +23,8 @@ Feature: Create product
     And method post
     Then status 200
     And print response
-    
-    
-@create
+
+  @create
   Scenario Outline: Create multiple products
     Given path '/api/v1/product/save'
     When request
@@ -44,10 +43,9 @@ Feature: Create product
       """
     And method post
     And print response
-    
-    Examples:
-    |productName|idValue|categoryValue|price|
-    |iphone|1|smart phone|800|
-    |galaxy|1|smart phone|800|
-    |Nokia|1|smart phone|800|
-    
+
+    Examples: 
+      | productName | idValue | categoryValue | price |
+      | iphone      |       1 | smart phone   |   800 |
+      | galaxy      |       1 | smart phone   |   800 |
+      | Nokia       |       1 | smart phone   |   800 |
